@@ -8,8 +8,8 @@
 
   <Identity
     Name="440bd79e-af9d-4315-90ad-1d501e441323"
-    Publisher="CN=Kova"
-    Version="1.0.0.0" />
+    Publisher="CN=Shapr3D, O=Shapr3D, C=HU"
+    Version="0.1.0.0" />
 
   <Properties>
     <DisplayName>Packaging</DisplayName>
