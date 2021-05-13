@@ -11,7 +11,7 @@
     <StackPanel
         HorizontalAlignment="Stretch"
         VerticalAlignment="Stretch"
-        Background="White">
+        Background="Transparent">
         <StackPanel Orientation="Horizontal">
             <TextBlock Text="Input path:" />
             <TextBox
