@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestApp", "TestApp.vcxproj", "{E74F0FFB-2A71-4888-BD97-51B2BF830B3E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestApp", "TestApp\TestApp.vcxproj", "{E74F0FFB-2A71-4888-BD97-51B2BF830B3E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileHandlingApp", "..\FileHandlingApp\FileHandlingApp.vcxproj", "{5693A0A6-E5A3-42FA-9820-55CC3B35C864}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FileHandlingApp", "FileHandlingApp\FileHandlingApp.vcxproj", "{5693A0A6-E5A3-42FA-9820-55CC3B35C864}"
 EndProject
-Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "TestAppPackage", "..\Packaging\TestAppPackage.wapproj", "{5BFD0CAF-9619-45D3-A279-BDE42C14EA50}"
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "TestApp.Package", "TestApp.Package.wapproj", "{5BFD0CAF-9619-45D3-A279-BDE42C14EA50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
