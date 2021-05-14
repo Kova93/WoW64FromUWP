@@ -1,31 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
+
   <Identity
-    Name="e49e4618-fc50-4e0d-abe2-5256474da3b3"
+    Name="9d3f3086-a8a8-4177-bd23-f12b1b9034e3"
     Publisher="CN=Shapr3D, O=Shapr3D, C=HU"
     Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="e49e4618-fc50-4e0d-abe2-5256474da3b3" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <mp:PhoneIdentity PhoneProductId="9d3f3086-a8a8-4177-bd23-f12b1b9034e3" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
   <Properties>
     <DisplayName>TestApp</DisplayName>
-    <PublisherDisplayName>Kova</PublisherDisplayName>
+    <PublisherDisplayName>Shapr3D</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
+
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
   </Dependencies>
+
   <Resources>
-    <Resource Language="x-generate" />
+    <Resource Language="x-generate"/>
   </Resources>
+
   <Applications>
-    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="TestApp.App">
-      <uap:VisualElements DisplayName="TestApp" Description="Project for a single page C++/WinRT Universal Windows Platform (UWP) app with no predefined layout"
-        Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" BackgroundColor="transparent">
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
-        </uap:DefaultTile>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="TestApp.App">
+      <uap:VisualElements
+        DisplayName="TestApp"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="TestApp"
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>
   </Applications>
+
   <Capabilities>
     <Capability Name="internetClient" />
   </Capabilities>

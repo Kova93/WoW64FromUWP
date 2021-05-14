@@ -1,0 +1,7 @@
+namespace TestComponent
+{
+    static runtimeclass ProcessRunner
+    {
+        static UInt64 CallFileHandlingApp(String inputFilePath, String outputFileName);
+    }
+}
