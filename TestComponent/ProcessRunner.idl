@@ -1,7 +1,12 @@
 namespace TestComponent
 {
+    struct ProcessResult {
+        Boolean DidCreateSuccessfully;
+        UInt64 ExitCode;
+    };
+
     static runtimeclass ProcessRunner
     {
-        static UInt64 CallFileHandlingApp(String inputFilePath, String outputFileName);
+        static ProcessResult CallFileHandlingApp(String inputFilePath, String outputFileName);
     }
 }

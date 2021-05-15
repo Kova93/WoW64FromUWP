@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestComponent", "TestCompon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{D80B918E-468D-425B-B319-292631CAB1B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLibrary", "TestLibrary\TestLibrary.csproj", "{72C98009-FC81-4E44-93D9-A1FC3E53EC05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -55,6 +57,14 @@ Global
 		{D80B918E-468D-425B-B319-292631CAB1B2}.Release|ARM64.Build.0 = Release|ARM64
 		{D80B918E-468D-425B-B319-292631CAB1B2}.Release|x64.ActiveCfg = Release|x64
 		{D80B918E-468D-425B-B319-292631CAB1B2}.Release|x64.Build.0 = Release|x64
+		{72C98009-FC81-4E44-93D9-A1FC3E53EC05}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{72C98009-FC81-4E44-93D9-A1FC3E53EC05}.Debug|ARM64.Build.0 = Debug|ARM64
+		{72C98009-FC81-4E44-93D9-A1FC3E53EC05}.Debug|x64.ActiveCfg = Debug|x64
+		{72C98009-FC81-4E44-93D9-A1FC3E53EC05}.Debug|x64.Build.0 = Debug|x64
+		{72C98009-FC81-4E44-93D9-A1FC3E53EC05}.Release|ARM64.ActiveCfg = Release|ARM64
+		{72C98009-FC81-4E44-93D9-A1FC3E53EC05}.Release|ARM64.Build.0 = Release|ARM64
+		{72C98009-FC81-4E44-93D9-A1FC3E53EC05}.Release|x64.ActiveCfg = Release|x64
+		{72C98009-FC81-4E44-93D9-A1FC3E53EC05}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

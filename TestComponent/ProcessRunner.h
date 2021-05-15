@@ -6,7 +6,7 @@ namespace winrt::TestComponent::implementation
 {
     struct ProcessRunner
     {
-        static uint64_t CallFileHandlingApp(hstring const& inputFilePath, hstring const& outputFileName);
+        static ProcessResult CallFileHandlingApp(hstring const& inputFilePath, hstring const& outputFileName);
     };
 }
 namespace winrt::TestComponent::factory_implementation

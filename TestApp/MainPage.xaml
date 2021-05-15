@@ -13,25 +13,36 @@
         VerticalAlignment="Stretch"
         Background="Transparent">
         <StackPanel Orientation="Horizontal">
-            <TextBlock Text="Input path:" />
+            <TextBlock Margin="4" Text="Input path:" />
             <TextBox
                 x:Name="pathTextBox"
                 Width="300"
+                Margin="4"
                 IsReadOnly="True"
-                Text="{x:Bind FilePath, Mode=OneWay}" />
-            <Button x:Name="browseButton" Click="OnBrowseButtonClicked">Browse</Button>
+                Text="{x:Bind _viewModel.FilePath, Mode=OneWay}" />
+            <Button
+                x:Name="browseButton"
+                Margin="4"
+                Click="{x:Bind _viewModel.BrowseInputFileAndCopyToTempFolder}">
+                Browse
+            </Button>
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-            <TextBlock Text="Output name:" />
-            <TextBox x:Name="outputNameTextBox" Width="200" />
+            <TextBlock Margin="4" Text="Output name:" />
+            <TextBox
+                x:Name="outputNameTextBox"
+                Width="200"
+                Margin="4" />
             <Button
                 x:Name="copyButton"
+                Margin="4"
                 Click="OnCopyButtonClicked"
-                IsEnabled="False">
+                IsEnabled="{x:Bind StringHasValue(_viewModel.FilePath), Mode=OneWay}">
                 Copy
             </Button>
             <Button
                 x:Name="openButton"
+                Margin="4"
                 Click="OnOpenButtonClicked"
                 IsEnabled="False">
                 Open

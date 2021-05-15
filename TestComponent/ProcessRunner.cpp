@@ -14,7 +14,7 @@ using namespace Windows::Storage;
 
 namespace winrt::TestComponent::implementation
 {
-    uint64_t ProcessRunner::CallFileHandlingApp(hstring const& inputFilePath, hstring const& outputFileName)
+    ProcessResult ProcessRunner::CallFileHandlingApp(hstring const& inputFilePath, hstring const& outputFileName)
     {
         STARTUPINFO si;
         PROCESS_INFORMATION pi;
@@ -27,7 +27,7 @@ namespace winrt::TestComponent::implementation
             << std::quoted(std::wstring_view(ApplicationData::Current().LocalFolder().Path())) << L' ' << std::quoted(std::wstring_view(outputFileName));
 
         if (!CreateProcess(nullptr, argsBuilder.str().data(), nullptr, nullptr, false, 0, nullptr, nullptr, &si, &pi)) {
-            return GetLastError();
+            return { false, GetLastError() };
         }
 
         WaitForSingleObject(pi.hProcess, INFINITE);
@@ -46,6 +46,6 @@ namespace winrt::TestComponent::implementation
         CloseHandle(pi.hProcess);
         CloseHandle(pi.hThread);
 
-        return code;
+        return { true, code };
     }
 }
